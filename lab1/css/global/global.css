@@ -85,6 +85,7 @@ a:hover {
 
 .button:hover {
     background-color: var(--primary-light);
+    color: var(--white);
 }
 
 @media (min-width: 575px) {
