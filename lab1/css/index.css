@@ -1,0 +1,11 @@
+@import url(./global/reset.css);
+
+@import url(./global/global.css);
+@import url(./global/fonts.css);
+@import url(./global/utils.css);
+
+@import url(./sections/contact_section.css);
+@import url(./sections/list_section.css);
+@import url(./sections/photo_section.css);
+@import url(./sections/project_section.css);
+@import url(./sections/www_section.css);
