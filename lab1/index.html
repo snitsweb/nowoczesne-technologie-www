@@ -11,12 +11,12 @@
     <title>Oleksandr Snitsaruk</title>
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="/">Home</a></li>
-                <li><a href="./projects.html">Projects</a></li>
-                <li><a href="./contacts.html">Contact</a></li>
+    <header class="header">
+        <nav class="nav">
+            <ul class="nav-list">
+                <li><a class="nav-list-item" href="./index.html">Home</a></li>
+                <li><a class="nav-list-item" href="./pages/projects.html">Projects</a></li>
+                <li><a class="nav-list-item" href="./pages/about.html">About me</a></li>
             </ul>
         </nav>
     </header>
@@ -28,13 +28,13 @@
                     <div class="photo_section_text_wrapper">
                         <h1 class="h1 mb-s">Hello!</h1>
                         <p>I'm a frontend developer familiar with JS/TS, Express/Nest and worked with Vue/React (including SSR). I developed both simple multi-page sites, as well as catalogs and online stores, worked with server setup (VPS). Also I am studying Algorithmic Computer Science at the Wrocław University of Technology.</p>
-                        <a href="./projects.html" title="Moje projekty" class="button mt-sm">Check my projects!</a>
+                        <a href="./pages/projects.html" title="Moje projekty" class="button mt-sm">Check my projects!</a>
                     </div>
                     <div class="photo_section_image_wrapper">
                         <picture>
-                            <source media="(min-width:1200px)" srcset="../assets/img/me.jpg">
-                            <source media="(min-width:768px)" srcset="../assets/img/me_lg.jpg" />
-                            <img src="../assets/img/me_sm.jpg" alt="Alternatywny teskt" />
+                            <source media="(min-width:1200px)" srcset="./assets/img/me.jpg">
+                            <source media="(min-width:768px)" srcset="./assets/img/me_lg.jpg" />
+                            <img src="./assets/img/me_sm.jpg" alt="Alternatywny teskt" />
                         </picture>
                     </div>
                 </div>
@@ -69,7 +69,7 @@
             </div>
         </section>
 
-        <section class="contact_section mt-md">
+        <section class="contact_section mt-md pb-md">
             <div class="container">
                 <h2 class="h1">Contact</h2>
                 <div class="contact_section_inner mt-sm">

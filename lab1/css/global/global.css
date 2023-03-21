@@ -1,20 +1,20 @@
 :root {
-   --primary: #089938;
-   --secodary: #040505;
-   --primary-light: #01d146;
+    --primary: #089938;
+    --secodary: #040505;
+    --primary-light: #01d146;
 
-   --white: #fff;
-   --grey: #ECECECFF;
+    --white: #fff;
+    --grey: #ECECECFF;
 
-   --radius: 10px;
-   --transition: all .3s ease-in-out;
+    --radius: 10px;
+    --transition: all .3s ease-in-out;
 
-   font-family: 'Roboto', sans-serif;
-   font-weight: 400;
-   letter-spacing: 0.04em;
-   font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    letter-spacing: 0.04em;
+    font-size: 14px;
 
-   -webkit-tap-highlight-color: transparent;
+    -webkit-tap-highlight-color: transparent;
 }
 
 .container {
@@ -39,7 +39,7 @@ a:hover {
 
 .h1 {
     font-size: 30px;
-	line-height: 30px;
+    line-height: 30px;
     font-weight: 700;
     text-transform: uppercase;
     color: var(--primary);
@@ -90,60 +90,69 @@ a:hover {
 
 @media (min-width: 575px) {
     .container {
-       max-width: 540px;
-       padding: 0;
+        max-width: 540px;
+        padding: 0;
     }
-   }
-   
-   @media (min-width: 768px) {
-      .container {
-       max-width: 720px;
-       padding: 0;
-      }
-   }
-   
-   @media (min-width: 992px) {
-   
-       :root {
-           font-size: 18px;
-           line-height: 22px;
-       }
-   
-       .container {
-           max-width: 960px;
-       }
-   
-       .h1 {
-           font-size: 54px;
-           line-height: 60px;
-       }
-   
-       .h2 {
-           font-size: 36px;
-           line-height: 40px;
-       }
-   
-       .h3 {
-           font-size: 26px;
-           line-height: 33px;
-       }
-   
-       .h4 {
-           font-size: 22px;
-           line-height: 26px;
-       }
-   }
-   
-   @media (min-width: 1200px) {
-      .container {
-       max-width: 1140px;
-       padding: 0 30px;
-       margin: 0 auto;
-      }
-   }
-   
-   @media (min-width: 1600px) {
-      .container {
-       max-width: 1540px;
-      }
-   }
+}
+
+@media (min-width: 768px) {
+    .container {
+        max-width: 720px;
+        padding: 0;
+    }
+}
+
+@media (min-width: 992px) {
+
+    :root {
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+    .container {
+        max-width: 960px;
+    }
+
+    .h1 {
+        font-size: 54px;
+        line-height: 60px;
+    }
+
+    .h2 {
+        font-size: 36px;
+        line-height: 40px;
+    }
+
+    .h3 {
+        font-size: 26px;
+        line-height: 33px;
+    }
+
+    .h4 {
+        font-size: 22px;
+        line-height: 26px;
+    }
+}
+
+pre, code {
+    display: inline-block;
+    white-space: pre-line;
+    text-align: left;
+    padding: 10px;
+    border-radius: var(--radius);
+    background-color: var(--grey);
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1140px;
+        padding: 0 30px;
+        margin: 0 auto;
+    }
+}
+
+@media (min-width: 1600px) {
+    .container {
+        max-width: 1540px;
+    }
+}

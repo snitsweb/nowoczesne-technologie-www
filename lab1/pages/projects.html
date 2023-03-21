@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="../css/index.css">
+
+    <title>Projects | Oleksandr Snitsaruk</title>
+</head>
+<body>
+<header class="header">
+    <nav class="nav">
+        <ul class="nav-list">
+            <li><a class="nav-list-item" href="../index.html">Home</a></li>
+            <li><a class="nav-list-item" href="./projects.html">Projects</a></li>
+            <li><a class="nav-list-item" href="../pages/about.html">About me</a></li>
+        </ul>
+    </nav>
+</header>
+<main>
+    <section class="project_section mt-md">
+        <div class="container">
+            <h2 class="h1 mb-sm">Quwireless</h2>
+            <div class="project_section_inner">
+                <p>Donec rutrum congue leo eget malesuada. Pellentesque in ipsum id orci porta dapibus. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Nulla quis lorem ut libero malesuada feugiat. Quisque velit nisi, pretium ut lacinia in, elementum id enim. Pellentesque in ipsum id orci porta dapibus. Vivamus suscipit tortor eget felis porttitor volutpat. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui.</p>
+                <iframe class="mt-s" width="100%" height="600px" src="http://quwireless-dev.rekiny.wroclaw.pl"></iframe>
+                <p class="mt-md">
+                    Kod, który najbardziej mi się podoba:
+                </p>
+                <code>
+                    class RepeaterElement {
+                    &emsp;setPreviewComponent() {
+                    &emsp;&emsp;const previewSchemaType = Object.values(this.schema).find(el => el.attribute === this.preview)?.$type
+
+                    &emsp;&emsp;if (!this.preview || !previewSchemaType) {
+                    &emsp;&emsp;&emsp;this.previewComponent = RepeaterItemTitleElement
+                    &emsp;&emsp;&emsp;return
+                    &emsp;&emsp;}
+
+                    &emsp;&emsp;this.previewComponent = {
+                    &emsp;&emsp;&emsp;svg_input: RepeaterItemSvgTitleElement,
+                    &emsp;&emsp;&emsp;image_input: RepeaterItemImageTitleElement
+                    &emsp;&emsp;&emsp;}[previewSchemaType] || RepeaterItemTitleElement
+                    &emsp;}
+                    }
+                </code>
+
+                <p class="mt-s">
+                    Rozwiązał on problem z pokazywaniem preview dla elementów w pętli na zapleczu, co widać niżej na zrzucie ekranu. Jest możliwość dodać tam jak
+                    zdjęcie, plik SVG lub zwykły tekst.
+                </p>
+
+                <div class="mt-s">
+                    <picture>
+                        <source media="(min-width:768px)" srcset="../assets/img/repeater_element.jpg"/>
+                        <img src="../assets/img/repeater_element_sm.jpg" alt="Alternatywny teskt"/>
+                    </picture>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="project_section mt-md">
+        <div class="container">
+            <h2 class="h1 mb-sm">Nolimits</h2>
+            <div class="project_section_inner">
+                <p>Donec rutrum congue leo eget malesuada. Pellentesque in ipsum id orci porta dapibus. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Nulla quis lorem ut libero malesuada feugiat. Quisque velit nisi, pretium ut lacinia in, elementum id enim. Pellentesque in ipsum id orci porta dapibus. Vivamus suscipit tortor eget felis porttitor volutpat. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui.</p>
+                <iframe class="mt-s" width="100%" height="600px" src="http://nolimits.art.pl"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <section class="project_section mt-md mb-sm">
+        <div class="container">
+            <h2 class="h1 mb-sm">Nimphy</h2>
+            <div class="project_section_inner">
+                <p>Donec rutrum congue leo eget malesuada. Pellentesque in ipsum id orci porta dapibus. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Nulla quis lorem ut libero malesuada feugiat. Quisque velit nisi, pretium ut lacinia in, elementum id enim. Pellentesque in ipsum id orci porta dapibus. Vivamus suscipit tortor eget felis porttitor volutpat. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui.</p>
+                <iframe class="mt-s" width="100%" height="600px" src="http://nimphy.pl"></iframe>
+            </div>
+        </div>
+    </section>
+</main>
+</body>
+</html>
