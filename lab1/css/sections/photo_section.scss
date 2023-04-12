@@ -1,0 +1,25 @@
+.photo_section {
+
+}
+
+.photo_section_inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.photo_section_text_wrapper {
+    width: 100%;
+}
+
+@media (min-width: 992px) {
+    .photo_section_inner {
+       flex-direction: row;
+    }
+
+    .photo_section_image_wrapper img {
+        max-height: 100vh;
+    }
+}

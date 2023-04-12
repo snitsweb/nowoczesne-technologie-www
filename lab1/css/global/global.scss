@@ -1,0 +1,160 @@
+@import "breakpoints";
+
+:root {
+    --primary: #089938;
+    --secodary: #040505;
+    --primary-light: #01d146;
+
+    --white: #fff;
+    --grey: #ECECECFF;
+
+    --radius: 10px;
+    --transition: all .3s ease-in-out;
+
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    letter-spacing: 0.04em;
+    font-size: 14px;
+
+    -webkit-tap-highlight-color: transparent;
+}
+
+.container {
+    width: 100%;
+    padding: 0 1rem;
+    margin: auto;
+}
+
+p {
+    line-height: 26px;
+}
+
+a {
+    text-decoration: underline;
+    color: var(--primary);
+    transition: var(--transition);
+}
+
+a:hover {
+    color: var(--primary-light);
+}
+
+.h1 {
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--primary);
+}
+
+.h2 {
+    font-size: 24px;
+    line-height: 30px;;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: var(--primary);
+}
+
+.h3 {
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.h4 {
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.button {
+    display: block;
+    width: fit-content;
+    padding: 15px 30px;
+    background-color: var(--primary);
+    color: var(--white);
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 20px;
+    border-radius: var(--radius);
+    text-transform: uppercase;
+    transition: var(--transition);
+    letter-spacing: 0.06em;
+}
+
+.button:hover {
+    background-color: var(--primary-light);
+    color: var(--white);
+}
+
+@include is-greater-or-equals-than(575px){
+    .container {
+        max-width: 540px;
+        padding: 0;
+    }
+}
+
+@include is-greater-or-equals-than(768px) {
+    .container {
+        max-width: 720px;
+        padding: 0;
+    }
+}
+
+@include  is-greater-or-equals-than(992px) {
+
+    :root {
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+    .container {
+        max-width: 960px;
+    }
+
+    .h1 {
+        font-size: 54px;
+        line-height: 60px;
+    }
+
+    .h2 {
+        font-size: 36px;
+        line-height: 40px;
+    }
+
+    .h3 {
+        font-size: 26px;
+        line-height: 33px;
+    }
+
+    .h4 {
+        font-size: 22px;
+        line-height: 26px;
+    }
+}
+
+pre, code {
+    display: inline-block;
+    white-space: pre-line;
+    text-align: left;
+    padding: 10px;
+    border-radius: var(--radius);
+    background-color: var(--grey);
+}
+
+@include is-greater-or-equals-than(1200px){
+    .container {
+        max-width: 1140px;
+        padding: 0 30px;
+        margin: 0 auto;
+    }
+}
+
+@include is-greater-or-equals-than(1600px){
+    .container {
+        max-width: 1540px;
+    }
+}

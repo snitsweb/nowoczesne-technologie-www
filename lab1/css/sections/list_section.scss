@@ -1,0 +1,29 @@
+.list_section_inner {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.list_section_item {
+    transition: var(--transition);
+    border-radius: var(--radius);
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--grey);
+    gap: 10px;
+    border: 2px solid transparent;
+}
+
+.list_section_item:hover {
+    transform: translateY(-10px);
+    border-color: var(--primary);
+}
+
+@media (min-width: 992px) {
+    .list_section_inner {
+        grid-template-columns: repeat(6, 1fr);
+    }
+}
